@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "name": "cortneythurman_3_01312022",
+  "description": "Open Classrooms Web Development Project 3 Deliverables",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./SASS/main.scss:./CSS/style.css --style expanded",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CortGray/CortneyThurman_3_01312022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CortGray/CortneyThurman_3_01312022/issues"
+  },
+  "homepage": "https://github.com/CortGray/CortneyThurman_3_01312022#readme"
+}
