@@ -4,4 +4,20 @@
 
 .nav {
     background-color: #f2f2f2;
+    width: 100vw;
+    margin: -5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__heading {
+        text-align: center;
+    }
+    &__text {
+        text-align: center;
+    }
+    &__button {
+        text-decoration: none;
+    }
 }
