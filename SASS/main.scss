@@ -2,23 +2,5 @@
 @import "./Utils/mixins";
 @import "./Base/body";
 @import "./Layout/header";
+@import "./Layout/nav";
 
-.nav {
-    background-color: $altbgd;
-    width: $vpw;
-    margin: -5px;
-    padding: $blckpad;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__heading {
-        text-align: center;
-    }
-    &__text {
-        text-align: center;
-    }
-    &__button {
-        @include button;
-    }
-}
