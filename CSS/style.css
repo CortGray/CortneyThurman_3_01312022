@@ -42,10 +42,11 @@ body {
 }
 
 .nav {
-  background-color: #f2f2f2;
+  background-color: #f7f7f7;
   width: 100vw;
   margin: -5px;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -56,6 +57,7 @@ body {
 }
 .nav__text {
   text-align: center;
+  padding: 20px;
 }
 .nav__button {
   text-decoration: none;
@@ -64,6 +66,49 @@ body {
   padding: 20px;
   border-radius: 30px;
   box-shadow: 0px 5px 7px -5px #ababab;
+}
+
+.aside {
+  padding: 20px 0px;
+}
+.aside__list-item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.aside__number {
+  margin: 5px;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 100%;
+  padding: 0px 4px;
+  z-index: 2;
+}
+.aside__button {
+  display: flex;
+  flex-flow: row;
+  background: #f7f7f7;
+  margin: 10px 10px 10px -10px;
+  z-index: 1;
+  width: 90vw;
+  border-radius: 15px;
+  box-shadow: 0px 5px 7px -5px #ababab;
+}
+.aside__button-icon {
+  margin: 5px;
+  padding: 10px 0px 10px 20px;
+  color: #666666;
+}
+.aside__button-text {
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+.aside__button:hover {
+  background: #F4EAFF;
+}
+.aside__button:hover .aside__button-icon {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+.aside {
+    padding: $blckpad 0px;
+    &__list {
+        &-item {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+        }
+    }
+    &__number {
+        margin: $elmarg;
+        color: $btnclr;
+        background-color: $clr-prim;
+        border-radius: 100%;
+        padding: 0px 4px;
+        z-index: 2;
+    }
+    &__button {
+        display: flex;
+        flex-flow: row;
+        background: $altbgd;
+        margin: 10px 10px 10px -10px;
+        z-index: 1;
+        width: 90vw;
+        border-radius: 15px;
+        @include box-shadow;
+        &-icon {
+            margin: $elmarg;
+            padding: 10px 0px 10px 20px;
+            color: lighten($iconinact, 20%);
+        }
+        &-text {
+            margin: $elmarg;
+            padding: 10px;
+            font-weight: bold;
+        }
+        &:hover {
+            background: $primlight;
+            .aside__button-icon {
+                color: $clr-prim;
+            }
+        }
+    }
+}

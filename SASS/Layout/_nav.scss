@@ -2,13 +2,15 @@
     background-color: $altbgd;
     width: $vpw;
     margin: -5px;
-    padding: $blckpad;
+    padding-top: $blckpad;
+    padding-bottom: 50px;
     @include flex(column);
     &__heading {
         text-align: center;
     }
     &__text {
         text-align: center;
+        padding: $blckpad;
     }
     &__button {
         @include button;
