@@ -14,5 +14,6 @@
     }
     &__button {
         @include button;
+        /* animate hover here */
     }
 }

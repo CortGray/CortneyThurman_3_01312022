@@ -35,7 +35,9 @@
             font-weight: bold;
         }
         &:hover {
+            /* animate hover here */
             background: $primlight;
+            @include shadow-hover;
             .aside__button-icon {
                 color: $clr-prim;
             }

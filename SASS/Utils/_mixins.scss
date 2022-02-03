@@ -9,6 +9,10 @@
     box-shadow: 0px 5px 7px -5px $shdwclr;
 }
 
+@mixin shadow-hover {
+    box-shadow: 0px 5px 7px -5px $shwhvr;
+}
+
 @mixin button {
     text-decoration: none;
     color: $btnclr;
