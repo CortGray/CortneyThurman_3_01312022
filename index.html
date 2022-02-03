@@ -5,26 +5,25 @@
         <meta charset="utf-8">
         <meta name="description" content="Mock website for Ohmyfood">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <link href="CSS/style.css" type="text/css" rel="stylesheet" /> 
     </head>
     <body>
 <!-- header -->
-        <header>
-            <img class="header__logo" src="./images/logo/ohmyfood.png" alt="ohmyfood logo">
+        <header class="header">
+            <img class="header__logo" src="./images/logo/ohmyfood@2x.svg" alt="ohmyfood logo">
             <div class="header__location">
                 <i class="fas fa-map-marker-alt header__location-icon"></i>
                 <p class="header__location-city">Paris, Belleville</p>
             </div>
         </header>
 <!-- nav -->
-        <nav>
+        <nav class="nav">
             <h2 class="nav__heading">Book the menu you like</h2>
             <p class="nav__text">Discover top-of-the-art restaurants we picked for you</p>
             <a href="#home-main" class="nav__button">Explore our restaurants</a>
         </nav>
 <!-- aside -->
-        <aside>
+        <aside class="aside">
             <h3 class="aside__heading">How it works</h3>
             <p class="aside__number">1</p>
             <div class="aside__button">
@@ -43,8 +42,9 @@
             </div>
         </aside>
 <!-- main -->
-        <main id="home-main"></main>
+        <main id="home-main" class="main"></main>
 <!-- footer -->
-        <footer></footer>
+        <footer class="footer"></footer>
+        <script src="https://kit.fontawesome.com/5bc41f6fbf.js" crossorigin="anonymous"></script>
     </body>
 </html>
