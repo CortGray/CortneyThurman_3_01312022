@@ -1,3 +1,10 @@
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin box-shadow {
     box-shadow: 0px 5px 7px -5px $shdwclr;
 }
