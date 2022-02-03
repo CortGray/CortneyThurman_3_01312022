@@ -1,0 +1,12 @@
+@mixin box-shadow {
+    box-shadow: 0px 5px 7px -5px $shdwclr;
+}
+
+@mixin button {
+    text-decoration: none;
+    color: $btnclr;
+    background-image: linear-gradient(to bottom right, $clr-sec, $clr-prim);
+    padding: $blckpad;
+    border-radius: $brdrad;
+    @include box-shadow;
+}

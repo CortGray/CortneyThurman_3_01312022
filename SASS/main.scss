@@ -1,12 +1,13 @@
 @import "./Utils/variables";
+@import "./Utils/mixins";
 @import "./Base/body";
 @import "./Layout/header";
 
 .nav {
-    background-color: #f2f2f2;
-    width: 100vw;
+    background-color: $altbgd;
+    width: $vpw;
     margin: -5px;
-    padding: 20px;
+    padding: $blckpad;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,6 +19,6 @@
         text-align: center;
     }
     &__button {
-        text-decoration: none;
+        @include button;
     }
 }
