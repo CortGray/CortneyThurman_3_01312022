@@ -52,7 +52,7 @@
         }
         &-hover {
             display: none;
-            background-image: linear-gradient(to top right, $clr-sec, $clr-prim);
+            color: $clr-prim;
         }
     }
 }

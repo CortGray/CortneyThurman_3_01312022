@@ -178,7 +178,7 @@ body {
 }
 .main__menu-hover {
   display: none;
-  background-image: linear-gradient(to top right, #FF79DA, #9356DC);
+  color: #9356DC;
 }
 
 .footer {
