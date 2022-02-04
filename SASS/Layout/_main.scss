@@ -19,6 +19,12 @@
         text-decoration: none;
         &:hover {
             @include hover;
+            .main__menu-icon {
+                display: none;
+            }
+            .main__menu-hover {
+                display: initial;
+            }
         }
         &-pic {
             width: 90vw;
@@ -43,6 +49,10 @@
             position: absolute;
             top: 20px;
             right: 20px;
+        }
+        &-hover {
+            display: none;
+            background-image: linear-gradient(to top right, $clr-sec, $clr-prim);
         }
     }
 }
