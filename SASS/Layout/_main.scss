@@ -1,8 +1,48 @@
 .main {
-    &__heading {}
+    background-color: $altbgd;
+    width: $vpw;
+    margin: -8px;
+    padding: $blckpad;
+    &__heading {
+        padding: $elmarg;
+    }
+    &__list {
+        @include center(column);
+        padding: 0px 0px $blckpad 0px;
+    }
     &__menu {
+        margin: 10px;
+        @include flex(column);
+        background-color: $btnclr;
+        border-radius: 15px;
+        @include box-shadow;
+        text-decoration: none;
+        &:hover {
+            @include hover;
+        }
         &-pic {
             width: 90vw;
+            height: 25vh;
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 15px 15px 0px 0px;
+        }
+        &-card {
+            color: #000;
+            padding: $elmarg;
+            position: relative;
+        }
+        &-heading {
+            margin: $elmarg;
+        }
+        &-text {
+            margin: $elmarg;
+        }
+        &-icon {
+            margin: $elmarg;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     }
 }
