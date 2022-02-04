@@ -1,12 +1,12 @@
 .header {
-    @include flex(column);
+    @include center(column);
     &__logo {
         padding: $blckpad;
         width: $vpw;
         max-width: 200px;
     }
     &__location {
-        @include flex(row);
+        @include center(row);
         box-shadow: 0px 5px 7px -5px $shdwclr inset;
         width: $vpw;
         background-color: #e6e6e6;

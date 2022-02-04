@@ -1,0 +1,29 @@
+.footer {
+    background: $iconinact;
+    color: $btnclr;
+    width: 100vw;
+    margin: 0px 0px -8px -8px;
+    padding: $blckpad;
+    @include flex(column);
+    &__heading {
+        font-family: 'Shrikhand', cursive;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+    &__div {
+        @include flex(row);
+        align-items: center;
+        &-icon {
+            margin: $elmarg;
+        }
+        &-text {
+            margin: $elmarg;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $btnclr;
+        margin: $elmarg;
+    }
+}

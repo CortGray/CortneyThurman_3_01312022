@@ -4,7 +4,7 @@
     margin: -5px;
     padding-top: $blckpad;
     padding-bottom: 50px;
-    @include flex(column);
+    @include center(column);
     &__heading {
         text-align: center;
     }

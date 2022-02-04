@@ -77,7 +77,7 @@ body {
 }
 .aside__list-item {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   align-items: center;
 }
 .aside__number {
@@ -90,7 +90,7 @@ body {
 }
 .aside__button {
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   background: #f7f7f7;
   margin: 10px 10px 10px -10px;
   z-index: 1;
@@ -115,6 +115,42 @@ body {
 }
 .aside__button:hover .aside__button-icon {
   color: #9356DC;
+}
+
+.main__menu-pic {
+  width: 90vw;
+}
+
+.footer {
+  background: #333333;
+  color: #fff;
+  width: 100vw;
+  margin: 0px 0px -8px -8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__heading {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin: 10px;
+}
+.footer__div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer__div-icon {
+  margin: 5px;
+}
+.footer__div-text {
+  margin: 5px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #fff;
+  margin: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
