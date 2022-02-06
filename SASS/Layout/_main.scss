@@ -58,5 +58,14 @@
             top: 20px;
             right: 20px;
         }
+        &-new {
+            background-color: $clr-tert;
+            padding: $elmarg 25px;
+            color: darken($clr-tert, 40%);
+            font-weight: bold;
+            border-radius: 3px;
+            position: absolute;
+            right: 30px;
+        }
     }
 }
