@@ -147,10 +147,10 @@ body {
   opacity: 0.9;
 }
 .main__menu:hover .main__menu-icon {
-  display: none;
+  visibility: hidden;
 }
 .main__menu:hover .main__menu-hover {
-  display: initial;
+  visibility: visible;
 }
 .main__menu-pic {
   width: 90vw;
@@ -177,8 +177,12 @@ body {
   right: 20px;
 }
 .main__menu-hover {
-  display: none;
+  visibility: hidden;
   color: #9356DC;
+  margin: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .footer {

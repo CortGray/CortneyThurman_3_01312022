@@ -20,10 +20,10 @@
         &:hover {
             @include hover;
             .main__menu-icon {
-                display: none;
+                visibility: hidden;
             }
             .main__menu-hover {
-                display: initial;
+                visibility: visible;
             }
         }
         &-pic {
@@ -51,8 +51,12 @@
             right: 20px;
         }
         &-hover {
-            display: none;
+            visibility: hidden;
             color: $clr-prim;
+            margin: $elmarg;
+            position: absolute;
+            top: 20px;
+            right: 20px;
         }
     }
 }
