@@ -6,4 +6,64 @@
     position: relative;
     z-index: 2;
     padding: $blckpad;
+    &__div {
+        &:hover {
+            .menu-main__icon {
+                visibility: hidden;
+            }
+            .menu-main__hover {
+                visibility: visible;
+            }
+        }
+    }
+    &__heading {
+        font-family: 'Shrikhand', cursive;
+        position: relative;
+    }
+    &__icon {
+        position: absolute;
+        top: 55px;
+        right: 50px;
+    }
+    &__hover {
+        position: absolute;
+        top: 55px;
+        right: 50px;
+        color: $clr-prim;
+        visibility: hidden;
+    }
+    &__button {
+        @include button;
+        width: 200px
+    }
+}
+.menu-section {
+    @include flex(column);
+    &__heading {
+        font-weight: 400;
+        text-transform: uppercase;
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: $clr-tert;
+        }
+    }
+}
+.menu-dish {
+    background-color: $btnclr;
+    border-radius: 15px;
+    margin: $elmarg 0px;
+    padding: $elmarg;
+    @include box-shadow;
+    &__heading {
+        width: $vpw;
+        margin: $elmarg;
+    }
+    p {
+        display: inline-block;
+        margin: $elmarg;
+        margin-top: 0px;
+    }
 }
