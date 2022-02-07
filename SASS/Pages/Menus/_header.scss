@@ -1,0 +1,22 @@
+/* Header */
+.menu-header {
+    @include center(column);
+    &__logo {
+        padding: $blckpad;
+        width: $vpw;
+        max-width: 200px;
+        position: relative;
+    }
+    &__back {
+        padding: $elmarg;
+        width: 10vw;
+        position: absolute;
+        top: 28px;
+        left: 20px;
+    }
+    &__pic {
+        width: $vpw;
+        object-fit: cover;
+        overflow: hidden;
+    }
+}

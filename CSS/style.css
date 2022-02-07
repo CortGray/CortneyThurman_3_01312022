@@ -226,4 +226,30 @@ body {
   margin: 5px;
 }
 
+/* Header */
+.menu-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-header__logo {
+  padding: 20px;
+  width: 100vw;
+  max-width: 200px;
+  position: relative;
+}
+.menu-header__back {
+  padding: 5px;
+  width: 10vw;
+  position: absolute;
+  top: 28px;
+  left: 20px;
+}
+.menu-header__pic {
+  width: 100vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 /*# sourceMappingURL=style.css.map */
