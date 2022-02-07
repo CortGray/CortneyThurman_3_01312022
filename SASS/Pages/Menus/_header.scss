@@ -1,6 +1,7 @@
 /* Header */
 .menu-header {
     @include center(column);
+    z-index: 1;
     &__logo {
         padding: $blckpad;
         width: $vpw;
@@ -18,5 +19,7 @@
         width: $vpw;
         object-fit: cover;
         overflow: hidden;
+        position: relative;
+        z-index: 1;
     }
 }
