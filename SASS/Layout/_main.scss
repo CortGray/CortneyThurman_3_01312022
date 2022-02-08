@@ -11,7 +11,7 @@
         padding: 0px 0px $blckpad 0px;
     }
     &__menu {
-        margin: 10px;
+        margin: 10px 0px;
         @include flex(column);
         background-color: $btnclr;
         border-radius: 15px;

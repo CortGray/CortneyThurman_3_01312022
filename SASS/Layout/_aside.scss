@@ -19,7 +19,7 @@
         background: $altbgd;
         margin: 10px 10px 10px -10px;
         z-index: 1;
-        width: 90vw;
+        width: $vpw;
         border-radius: 15px;
         @include box-shadow;
         &-icon {
@@ -29,7 +29,7 @@
         }
         &-text {
             margin: $elmarg;
-            padding: 10px;
+            padding: 10px 0px;
             font-weight: bold;
         }
         &:hover {

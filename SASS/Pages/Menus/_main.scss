@@ -2,11 +2,11 @@
     background-color: $altbgd;
     border-radius: $brdrad $brdrad 0px 0px;
     width: $vpw;
-    margin: -50px 0px 0px -8px;
+    margin: -50px 0px 8px -8px;
     position: relative;
     z-index: 2;
-    padding: $blckpad;
-    &__div {
+    padding: $blckpad $blckpad 50px $blckpad;
+    &__div-heading {
         &:hover {
             .menu-main__icon {
                 visibility: hidden;
@@ -32,13 +32,21 @@
         color: $clr-prim;
         visibility: hidden;
     }
+    &__div-button {
+        @include center(row);
+    }
     &__button {
         @include button;
-        width: 200px
+        width: 200px;
+        text-align: center;
+        &:hover {
+            @include hover;
+        }
     }
 }
 .menu-section {
     @include flex(column);
+    padding: $blckpad 0px;
     &__heading {
         font-weight: 400;
         text-transform: uppercase;
@@ -54,7 +62,7 @@
 .menu-dish {
     background-color: $btnclr;
     border-radius: 15px;
-    margin: $elmarg 0px;
+    margin: 10px 0px;
     padding: $elmarg;
     @include box-shadow;
     &__heading {
