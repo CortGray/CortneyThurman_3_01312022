@@ -28,3 +28,15 @@
     @include box-shadow;
     transition: all 500ms;
 }
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tabl-min)) and (max-width: map-get($breakpoints, tabl-max)) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

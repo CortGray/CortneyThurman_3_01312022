@@ -13,3 +13,9 @@ $vpw: 100vw;
 $blckpad: 20px;
 $elmarg: 5px;
 $brdrad: 30px;
+
+$breakpoints: (
+    tabl-min: 426px,
+    tabl-max: 768px,
+    desktop: 769px
+)
