@@ -1,0 +1,10 @@
+@keyframes dish-load {
+    from {
+      transform: translateY(1vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0vw);
+      opacity: 1;
+    }
+  }

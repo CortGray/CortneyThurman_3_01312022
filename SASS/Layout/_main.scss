@@ -17,15 +17,16 @@
         border-radius: 15px;
         @include box-shadow;
         text-decoration: none;
+        transition: all 1000ms;
         &:hover {
             @include hover;
-            .main__menu-icon {
-                visibility: hidden;
-            }
             .main__menu-hover {
-                visibility: visible;
+                opacity: 1;
             }
         }
+        &:hover + .main__menu-hover {
+            opacity: 1;
+        } 
         &-pic {
             width: 90vw;
             height: 25vh;
@@ -51,12 +52,14 @@
             right: 20px;
         }
         &-hover {
-            visibility: hidden;
+            opacity: 0;
             color: $clr-prim;
             margin: $elmarg;
             position: absolute;
             top: 20px;
             right: 20px;
+            transition: all 1000ms;
+            
         }
         &-new {
             background-color: $clr-tert;
@@ -65,7 +68,7 @@
             font-weight: bold;
             border-radius: 3px;
             position: absolute;
-            right: 30px;
+            right: 10vw;
         }
     }
 }

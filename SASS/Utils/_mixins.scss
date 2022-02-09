@@ -26,4 +26,5 @@
     padding: $blckpad;
     border-radius: $brdrad;
     @include box-shadow;
+    transition: all 500ms;
 }

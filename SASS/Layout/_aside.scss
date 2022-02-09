@@ -22,6 +22,7 @@
         width: $vpw;
         border-radius: 15px;
         @include box-shadow;
+        transition: all 500ms;
         &-icon {
             margin: $elmarg;
             padding: 10px 0px 10px 20px;
