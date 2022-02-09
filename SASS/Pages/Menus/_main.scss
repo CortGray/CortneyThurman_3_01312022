@@ -50,6 +50,18 @@
 .menu-section {
     @include flex(column);
     padding: $blckpad 0px;
+    @include tablet {
+        align-items: center;
+    }
+    @include desktop {
+        align-items: center;
+        padding: $blckpad;
+        &div {
+            @include flex(row);
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
     &__heading {
         font-weight: 400;
         text-transform: uppercase;
@@ -71,6 +83,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    max-width: 400px;
     animation: dish-load 500ms both;
     @for $n from 1 through 10 {
         &--#{$n} {
@@ -122,7 +135,7 @@
     }
     &__check {
         color: $btnclr;
-        padding: $blckpad;
+        padding: 21px;
         margin: 0px;
         transform: rotate(0turn);
         transition: transform 1000ms;

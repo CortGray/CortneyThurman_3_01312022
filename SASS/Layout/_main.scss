@@ -9,6 +9,12 @@
     &__list {
         @include center(column);
         padding: 0px 0px $blckpad 0px;
+        @include tablet {
+            flex-flow: row wrap;
+        }
+        @include desktop {
+            flex-flow: row wrap;
+        }
     }
     &__menu {
         margin: 10px 0px;
@@ -16,8 +22,17 @@
         background-color: $btnclr;
         border-radius: 15px;
         @include box-shadow;
+        position: relative;
         text-decoration: none;
         transition: all 1000ms;
+        @include tablet {
+            width: 40vw;
+            margin: $blckpad;
+        }
+        @include desktop {
+            width: 40vw;
+            margin: 30px;
+        }
         &:hover {
             @include hover;
             .main__menu-hover {
@@ -33,6 +48,21 @@
             object-fit: cover;
             overflow: hidden;
             border-radius: 15px 15px 0px 0px;
+            @include tablet {
+                width: 100%;
+            }
+            @include desktop {
+                width: 100%;
+            }
+        }
+        &-new {
+            background-color: $clr-tert;
+            padding: $elmarg 25px;
+            color: darken($clr-tert, 40%);
+            font-weight: bold;
+            border-radius: 3px;
+            position: absolute;
+            right: $blckpad;
         }
         &-card {
             color: #000;
@@ -60,15 +90,6 @@
             right: 20px;
             transition: all 1000ms;
             
-        }
-        &-new {
-            background-color: $clr-tert;
-            padding: $elmarg 25px;
-            color: darken($clr-tert, 40%);
-            font-weight: bold;
-            border-radius: 3px;
-            position: absolute;
-            right: 10vw;
         }
     }
 }

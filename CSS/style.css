@@ -13,7 +13,7 @@
 body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -86,10 +86,39 @@ body {
 .aside {
   padding: 20px 0px;
 }
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .aside__heading {
+    width: 100vw;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .aside__heading {
+    width: 100vw;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .aside__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
 .aside__list-item {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .aside__list-item {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .aside__list-item {
+    justify-content: center;
+  }
 }
 .aside__number {
   margin: 5px;
@@ -106,18 +135,19 @@ body {
   margin: 10px 10px 10px -10px;
   z-index: 1;
   width: 100vw;
+  max-width: 400px;
   border-radius: 15px;
   box-shadow: 0px 5px 7px -5px #ababab;
   transition: all 500ms;
 }
 .aside__button-icon {
   margin: 5px;
-  padding: 10px 0px 10px 20px;
+  padding: 20px 0px 20px 20px;
   color: #666666;
 }
 .aside__button-text {
   margin: 5px;
-  padding: 10px 0px;
+  padding: 20px 0px;
   font-weight: bold;
 }
 .aside__button:hover {
@@ -145,6 +175,16 @@ body {
   align-items: center;
   padding: 0px 0px 20px 0px;
 }
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .main__list {
+    flex-flow: row wrap;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main__list {
+    flex-flow: row wrap;
+  }
+}
 .main__menu {
   margin: 10px 0px;
   display: flex;
@@ -152,8 +192,21 @@ body {
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0px 5px 7px -5px #ababab;
+  position: relative;
   text-decoration: none;
   transition: all 1000ms;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .main__menu {
+    width: 40vw;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main__menu {
+    width: 40vw;
+    margin: 30px;
+  }
 }
 .main__menu:hover {
   box-shadow: 0px 5px 7px -5px #4d4d4d;
@@ -171,6 +224,25 @@ body {
   object-fit: cover;
   overflow: hidden;
   border-radius: 15px 15px 0px 0px;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .main__menu-pic {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .main__menu-pic {
+    width: 100%;
+  }
+}
+.main__menu-new {
+  background-color: #99E2D0;
+  padding: 5px 25px;
+  color: #278870;
+  font-weight: bold;
+  border-radius: 3px;
+  position: absolute;
+  right: 20px;
 }
 .main__menu-card {
   color: #000;
@@ -197,15 +269,6 @@ body {
   top: 20px;
   right: 20px;
   transition: all 1000ms;
-}
-.main__menu-new {
-  background-color: #99E2D0;
-  padding: 5px 25px;
-  color: #278870;
-  font-weight: bold;
-  border-radius: 3px;
-  position: absolute;
-  right: 10vw;
 }
 
 .footer {
@@ -268,6 +331,16 @@ body {
   position: relative;
   z-index: 1;
   margin: 0px;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .menu-header__pic {
+    max-height: 40vh;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu-header__pic {
+    max-height: 25vh;
+  }
 }
 
 .menu-main {
@@ -333,6 +406,23 @@ body {
   flex-direction: column;
   padding: 20px 0px;
 }
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .menu-section {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu-section {
+    align-items: center;
+    padding: 20px;
+  }
+  .menu-sectiondiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
 .menu-section__heading {
   font-weight: 400;
   text-transform: uppercase;
@@ -355,6 +445,7 @@ body {
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  max-width: 400px;
   animation: dish-load 500ms both;
 }
 .menu-dish--1 {
@@ -432,7 +523,7 @@ body {
 }
 .menu-dish__check {
   color: #fff;
-  padding: 20px;
+  padding: 21px;
   margin: 0px;
   transform: rotate(0turn);
   transition: transform 1000ms;

@@ -1,9 +1,29 @@
 .aside {
     padding: $blckpad 0px;
+    &__heading {
+        @include tablet {
+            width: 100vw;
+            text-align: center;
+        }
+        @include desktop {
+            width: 100vw;
+            text-align: center;
+        }
+    }
     &__list {
+        @include desktop {
+            @include flex(row);
+            justify-content: space-evenly
+        }
         &-item {
             @include flex(row);
             align-items: center;
+            @include tablet {
+                justify-content: center;
+            }
+            @include desktop {
+                justify-content: center;
+            }
         }
     }
     &__number {
@@ -20,17 +40,18 @@
         margin: 10px 10px 10px -10px;
         z-index: 1;
         width: $vpw;
+        max-width: 400px;
         border-radius: 15px;
         @include box-shadow;
         transition: all 500ms;
         &-icon {
             margin: $elmarg;
-            padding: 10px 0px 10px 20px;
+            padding: 20px 0px 20px 20px;
             color: lighten($iconinact, 20%);
         }
         &-text {
             margin: $elmarg;
-            padding: 10px 0px;
+            padding: 20px 0px;
             font-weight: bold;
         }
         &:hover {
