@@ -291,6 +291,7 @@ body {
 .menu-main__heading {
   font-family: "Shrikhand", cursive;
   position: relative;
+  width: 70vw;
 }
 .menu-main__icon {
   position: absolute;
@@ -348,8 +349,12 @@ body {
   background-color: #fff;
   border-radius: 15px;
   margin: 10px 0px;
-  padding: 5px;
   box-shadow: 0px 5px 7px -5px #ababab;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
   animation: dish-load 500ms both;
 }
 .menu-dish--1 {
@@ -382,14 +387,62 @@ body {
 .menu-dish--10 {
   animation-delay: 3000ms;
 }
+.menu-dish:hover .menu-dish__price {
+  transform: translateX(-55px);
+}
+.menu-dish:hover .menu-dish__check {
+  transform: rotate(1turn);
+}
+.menu-dish:hover .menu-dish__checkdiv {
+  transform: translateX(-100%);
+}
 .menu-dish__heading {
   width: 100vw;
-  margin: 5px;
+  margin: 5px 5px 0px 10px;
+  padding: 5px;
+  padding-bottom: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-dish__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 .menu-dish p {
-  display: inline-block;
-  margin: 5px;
-  margin-top: 0px;
+  margin: 0px 5px 0px 10px;
+}
+.menu-dish__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+.menu-dish__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.menu-dish__price {
+  font-weight: bold;
+  transform: translateX(0px);
+  transition: transform 1000ms;
+}
+.menu-dish__check {
+  color: #fff;
+  padding: 20px;
+  margin: 0px;
+  transform: rotate(0turn);
+  transition: transform 1000ms;
+}
+.menu-dish__checkdiv {
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  margin: 0px;
+  transform: translateX(110%);
+  transition: transform 1000ms;
 }
 
 .menu-footer {

@@ -20,6 +20,7 @@
     &__heading {
         font-family: 'Shrikhand', cursive;
         position: relative;
+        width: 70vw;
     }
     &__icon {
         position: absolute;
@@ -65,21 +66,73 @@
     background-color: $btnclr;
     border-radius: 15px;
     margin: 10px 0px;
-    padding: $elmarg;
     @include box-shadow;
+    @include flex(row);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
     animation: dish-load 500ms both;
     @for $n from 1 through 10 {
         &--#{$n} {
             animation-delay: 300ms * $n;
         }
     }
+    &:hover {
+        .menu-dish__price {
+            transform: translateX(-55px);
+        }
+        .menu-dish__check {
+            transform: rotate(1turn);
+            &div {
+                transform: translateX(-100%);
+            }
+        }
+    }
     &__heading {
         width: $vpw;
-        margin: $elmarg;
+        margin: 5px 5px 0px 10px;
+        padding: $elmarg;
+        padding-bottom: 0px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__card {
+        @include flex(column);
+        width: 100%;
     }
     p {
-        display: inline-block;
-        margin: $elmarg;
-        margin-top: 0px;
+        margin: 0px 5px 0px 10px;
     }
+    &__description {
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+        padding: $elmarg;
+    }
+    &__text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    &__price {
+        font-weight: bold;
+        transform: translateX(0px);
+        transition: transform 1000ms;
+    }
+    &__check {
+        color: $btnclr;
+        padding: $blckpad;
+        margin: 0px;
+        transform: rotate(0turn);
+        transition: transform 1000ms;
+        &div {
+            background-color: $clr-tert;
+            border-radius: 0px 15px 15px 0px;
+            margin: 0px;
+            transform: translateX(110%);
+            transition: transform 1000ms;
+        }
+    }
+
 }
